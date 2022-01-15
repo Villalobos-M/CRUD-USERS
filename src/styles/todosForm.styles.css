@@ -1,0 +1,81 @@
+* {
+   box-sizing: border-box;
+   padding: 0;
+   margin: 0;
+}
+.users-form {
+   background-color: rgb(208, 188, 214);
+   width: 25rem;
+   height: 100vh;
+   position: fixed;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+h2 {
+   text-align: center;
+   color: rgb(82, 62, 99);
+   margin-bottom: 1rem;
+}
+.inputs-container {
+   padding: 1rem 1rem 1rem 2rem;
+   margin-bottom: 2rem;
+}
+.inputs-name {
+   display: flex;
+}
+.input-container {
+   margin-bottom: 1rem;
+   display: flex;
+}
+#todo-title,
+#description {
+   width: 90%;
+}
+.fas,
+.far {
+   margin-right: 1rem;
+}
+.fa-user,
+.fa-envelope,
+.fa-key,
+.fa-birthday-cake {
+   color: rgb(45, 6, 95);
+   font-size: 20px;
+}
+.cointainer-label {
+   width: 35px;
+}
+#birthday,
+#password,
+#email {
+   width: 318px;
+}
+.btns {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+.btns > button {
+   width: 10rem;
+   border: none;
+   margin-bottom: 1rem;
+   border-radius: 10px;
+
+   color: #4025df91 !important;
+   font-size: 18px;
+   font-weight: 400;
+   padding: 0.5em 1.2em;
+   background: rgba(0, 0, 0, 0);
+   border: 1.5px solid rgb(104, 130, 177);
+   transition: all 0.6s ease;
+   position: relative;
+}
+.btns > button:hover {
+   background: hsla(241, 65%, 54%, 0.507);
+   color: rgb(241, 233, 233) !important;
+}
+#fa-user-plus {
+   margin: 0;
+}
