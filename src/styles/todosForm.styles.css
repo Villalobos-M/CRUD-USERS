@@ -46,6 +46,11 @@ h2 {
 .cointainer-label {
    width: 35px;
 }
+input {
+   height: 25px;
+   border-radius: 5px;
+   border: solid 1px gray;
+}
 #birthday,
 #password,
 #email {

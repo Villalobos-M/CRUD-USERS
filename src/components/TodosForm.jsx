@@ -56,7 +56,7 @@ const TodosForm = ({ addUser, userSelected, cleanUser, updateUser}) => {
                             <label htmlFor='firstName'><i className="fas fa-user"></i> </label>
                         </div>
                         <input type="text"
-                            size="15" 
+                            size="18" 
                             placeholder=" firt name"
                             id='firstName'
                             onChange={e => setFirstName(e.target.value)}
@@ -66,7 +66,7 @@ const TodosForm = ({ addUser, userSelected, cleanUser, updateUser}) => {
                     <div className="input-container">
                         <label htmlFor='lastName'> </label>
                         <input type="text"
-                            size="15" 
+                            size="18" 
                             placeholder=" last name"
                             id='lastName'
                             onChange={e => setLastName(e.target.value)}
