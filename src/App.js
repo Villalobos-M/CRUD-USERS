@@ -1,5 +1,3 @@
-//REACT HOOK FORM
-
 import React, {useEffect, useState} from 'react';
 import TodosList from './components/TodosList';
 import TodosForm from "./components/TodosForm"
@@ -12,7 +10,7 @@ import './App.css';
 function App() {
 
   const [users, setUsers] = useState([])
-  const [userSelected, setUserSelected] = useState({})
+  const [userSelected, setUserSelected] = useState(null)
 
     useEffect(() => {
       axios.get('https://users-crud1.herokuapp.com/users/')
