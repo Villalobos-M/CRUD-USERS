@@ -18,7 +18,7 @@ const TodosForm = ({ addUser, userSelected, cleanUser, updateUser}) => {
                         last_name: lastName, 
                         birthday
                      }
-        if(userSelected.first_name){
+        if(userSelected){
             updateUser(user);
             clearForm()
         }else{
@@ -34,7 +34,7 @@ const TodosForm = ({ addUser, userSelected, cleanUser, updateUser}) => {
             setBirthday('')
         }
     useEffect(() => {
-        if(userSelected.first_name) {
+        if(userSelected) {
             setFirstName(userSelected.first_name)
             setLastName(userSelected.last_name)
             setEmail(userSelected.email)

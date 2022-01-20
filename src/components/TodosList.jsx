@@ -5,7 +5,7 @@ const TodosList = ({users, deleteUser, selectUser}) => {
     return (
         <ul className='ul'>
             {
-                users.map((user) => (
+                users.map(user => (
                     <li className='li' key={user.id}>
                         <section className='first-section'>
                             <div className="container-name">

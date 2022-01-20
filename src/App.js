@@ -1,3 +1,5 @@
+//REACT HOOK FORM
+
 import React, {useEffect, useState} from 'react';
 import TodosList from './components/TodosList';
 import TodosForm from "./components/TodosForm"
@@ -33,15 +35,16 @@ function App() {
       .then(() => getUser());
     }
 
-    const selectUser = (user) => {
-        setUserSelected(user) 
-      }
-    const cleanUser = () => setUserSelected({})
+    const selectUser = (user) =>  setUserSelected(user) 
+      
+    const cleanUser = () => setUserSelected(null)
 
     const updateUser = (editUser) => {
       axios.put(`https://users-crud1.herokuapp.com/users/${userSelected.id}/`, editUser)
-      .then(() => getUser());
-      
+      .then(() => { 
+        getUser()
+        cleanUser()
+      });
     }
   return (
     <div className="App">
